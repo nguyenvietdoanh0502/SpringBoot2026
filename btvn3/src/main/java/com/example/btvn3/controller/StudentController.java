@@ -5,6 +5,7 @@ import com.example.btvn3.dto.request.UpdateStudentRequest;
 import com.example.btvn3.dto.response.ApiResponse;
 import com.example.btvn3.model.Student;
 import com.example.btvn3.service.StudentService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +16,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/students")
+@Tag(name = "User Management", description = "API quản lý người dùng")
 public class StudentController {
     private final StudentService studentService;
     @Autowired

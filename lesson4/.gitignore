@@ -1,8 +1,5 @@
 HELP.md
 target/
-.m2/
-spring-boot.out.log
-spring-boot.err.log
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
